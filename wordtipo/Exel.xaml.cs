@@ -29,7 +29,6 @@ namespace wordtipo
         public Exel()
         {
             InitializeComponent();
-
         }
 
 
@@ -114,7 +113,8 @@ namespace wordtipo
 
         private void SaveRich2_Click(object sender, RoutedEventArgs e)
         {
-
+            pochta poch = new pochta();
+            poch.Show();
         }
     }
 

@@ -19,12 +19,13 @@
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
+            <RowDefinition Height="26.7"/>
+            <RowDefinition Height="3.3"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
         <TextBlock x:Name="Privet" Grid.Row="1" Grid.Column="0" Text="Добро пожаловать в программу" IsEnabled="False" LineHeight="14" FontSize="20" TextAlignment="Center" FontFamily="Consolas" FontWeight="Light" />
-        <Button Content="Word" x:Name="CreateWord" Grid.Row="5" Margin="10,0,10,-2" Click="CreateWord_Click"/>
-        <Button Content="Exel" x:Name="CreateExel" Grid.Row="7" Margin="10,0,10,-2" ButtonBase.Click="CreateExel_Click"/>
+        <Button Content="Word" x:Name="CreateWord" Grid.Row="5" Margin="10,0,10,28" Click="CreateWord_Click" Grid.RowSpan="2"/>
+        <Button Content="Exсel" x:Name="CreateExel" Grid.Row="7" Margin="10,0,10,28" ButtonBase.Click="CreateExel_Click" Grid.RowSpan="3"/>
     </Grid>
 </Window>

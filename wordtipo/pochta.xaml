@@ -1,0 +1,82 @@
+﻿<Window x:Class="wordtipo.pochta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wordtipo"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Почтовый клиент" Height="555" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="51*"/>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <TextBlock FontSize="16" FontFamily="Lucida Console" TextAlignment="Center" Foreground="#FF795548" Margin="0,0,0,44" Grid.RowSpan="2"><Run/><LineBreak/><Run/><LineBreak/><Run Text="Для отправки необходимо ввести свою почту и пароль от нее, а так же почту"/><LineBreak/><Run Text=" человека, которому вы хотите отправить этот файл. Сначала ваша почта!"/></TextBlock>
+        <TextBox x:Name="Login" 
+                 materialDesign:HintAssist.Hint="Логин" 
+                 TextWrapping="Wrap" 
+                 Foreground="#FF795548" 
+                 SelectionBrush="#FF795548" 
+                 CaretBrush="#FF795548" 
+                 BorderBrush="#FF795548" 
+                 FontFamily="Lucida Console" 
+                 TextAlignment="Center" 
+                 Background="{x:Null}" 
+                 FontSize="16"
+                 Grid.Row="1"
+                 Margin="30,8,30,43" Grid.RowSpan="2"/>
+
+        <TextBox x:Name="Password" 
+                 materialDesign:HintAssist.Hint="Пароль" 
+                 TextWrapping="Wrap" 
+                 Foreground="#FF795548" 
+                 SelectionBrush="#FF795548" 
+                 CaretBrush="#FF795548" 
+                 BorderBrush="#FF795548" 
+                 FontFamily="Lucida Console" 
+                 TextAlignment="Center" 
+                 Background="{x:Null}" 
+                 FontSize="16"
+                 Grid.Row="3"
+                 Margin="30,8,30,0"/>
+        <TextBox x:Name="Who" 
+            materialDesign:HintAssist.Hint="Кому" 
+            TextWrapping="Wrap" 
+            Foreground="#FF795548" 
+            SelectionBrush="#FF795548" 
+            CaretBrush="#FF795548" 
+            BorderBrush="#FF795548" 
+            FontFamily="Lucida Console" 
+            TextAlignment="Center" 
+            Background="{x:Null}" 
+            FontSize="16"
+            Grid.Row="6"
+            Margin="30,8,30,44" Grid.RowSpan="2"/>
+        <TextBox x:Name="Theme" 
+            materialDesign:HintAssist.Hint="Тема" 
+            TextWrapping="Wrap" 
+            Foreground="#FF795548" 
+            SelectionBrush="#FF795548" 
+            CaretBrush="#FF795548" 
+            BorderBrush="#FF795548" 
+            FontFamily="Lucida Console" 
+            TextAlignment="Center" 
+            Background="{x:Null}" 
+            FontSize="16"
+            Grid.Row="8"
+            Margin="30,8,30,1"/>
+        <Button Content="Отправить" Grid.Row="10" Margin="10,30,10,0"/>
+    </Grid>
+</Window>
